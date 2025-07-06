@@ -1,3 +1,5 @@
+import fairyVideo from './fairy.mp4'
+
 const App: React.FC = () => {
   // handle double click to fullscreen
   const handleDoubleClick = () => {
@@ -10,13 +12,13 @@ const App: React.FC = () => {
   return (
     <>
       <video
-        src='/fairy.mp4'
+        src={fairyVideo}
         autoPlay
         loop
         muted
         className='fixed top-0 left-0 w-full h-full object-cover z-[-1]'
         onDoubleClick={handleDoubleClick}
-        controlsList="nodownload nofullscreen noremoteplayback"
+        controlsList='nodownload nofullscreen noremoteplayback'
         disablePictureInPicture
       />
     </>
